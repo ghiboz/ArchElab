@@ -30,7 +30,7 @@ namespace ArchElab
                 if (command == key)
                 {
                     enabled = true;
-                    return $"{this.GetType().Name}: {welcomeMessage}";
+                    return $"{this.GetType().Name}: {welcomeMessage}\r\npremi \\ per tornare al menu";
                 }
             }
             catch (Exception ex)
@@ -75,7 +75,6 @@ namespace ArchElab
 
         protected virtual string ToEccesso(int value, int bits, int pow)
         {
-
             var powWalue = Convert.ToInt32(Math.Pow(2, pow));
             return ToBin(value + powWalue, bits);
         }

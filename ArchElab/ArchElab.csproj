@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinToDec.cs" />
     <Compile Include="DecToBin.cs" />
     <Compile Include="HexToBin.cs" />
     <Compile Include="HexToDec.cs" />
