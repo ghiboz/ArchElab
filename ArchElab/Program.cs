@@ -13,19 +13,23 @@ namespace ArchElab
         {
             // aggiungo le operazioni
             op.Add(new DecToBin() { key = 1 });
-            op.Add(new HexToBin() { key = 2 });
-            op.Add(new HexToDec() { key = 3 });
-            op.Add(new Iee754() { key = 4 });
+            op.Add(new BinToDec() { key = 2 });
+            op.Add(new HexToBin() { key = 3 });
+            op.Add(new HexToDec() { key = 4 });
+            op.Add(new Iee754() { key = 5 });
 
-            Console.WriteLine("ArchElab: exit per uscire");
+        MENU:
+            Console.Clear();
+            Console.WriteLine("ArchElab");
             foreach (var o in op)
             {
                 Console.WriteLine(o.Menu());
             }
+            Console.WriteLine("exit per chiudere");
 
             // scrivo l'elemento attivo
             var elm = Console.ReadLine();
-            while (elm != "exit")
+            while (elm != "exit" && elm != "\\")
             {
                 foreach (var o in op)
                 {
@@ -35,6 +39,10 @@ namespace ArchElab
                 if (oper == "exit")
                 {
                     return;
+                }
+                if (oper == "\\")
+                {
+                    goto MENU;
                 }
                 Console.WriteLine(op.Where(x => x.enabled).FirstOrDefault().Operate(oper));
             }
