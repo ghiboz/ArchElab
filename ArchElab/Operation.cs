@@ -22,6 +22,11 @@ namespace ArchElab
             return $"{key}: {menuTitle}";
         }
 
+        public void Disable()
+        {
+            enabled = false;
+        }
+
         public virtual string Welcome(string value)
         {
             try

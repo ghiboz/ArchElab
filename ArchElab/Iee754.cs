@@ -11,7 +11,10 @@ namespace ArchElab
         public Iee754()
         {
             menuTitle = "binario => IEE 754";
-            welcomeMessage = "Inserire il valore da convertire: (binario, n bit segno, n bit esponente, n bit mantissa)";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (binario, n bit segno, n bit esponente, n bit mantissa)
+.Inserire il valore da convertire: (0xesadecimale, n bit segno, n bit esponente, n bit mantissa)
+";
         }
 
         public override string Operate(string input)
@@ -20,6 +23,13 @@ namespace ArchElab
             if (tmp.Length != 4) return $"Errore nella stringa {input}";
 
             string bin = tmp[0];
+
+            if(bin.StartsWith("0x"))
+            {
+                bin = bin.Replace("0x", "");
+                bin = HexToBin(bin);
+            }
+
             int nSign = Convert.ToInt32(tmp[1]);
             int nExp = Convert.ToInt32(tmp[2]);
             int nMant = Convert.ToInt32(tmp[3]);

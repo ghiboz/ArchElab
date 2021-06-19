@@ -26,6 +26,9 @@ namespace ArchElab
             op.Add(new Iee754() { key = 0 });
 
         MENU:
+
+            op.ForEach(f => f.Disable());
+
             Console.Clear();
             Console.WriteLine("ArchElab");
             foreach (var o in op)
