@@ -11,7 +11,9 @@ namespace ArchElab
         public HexToDec()
         {
             menuTitle = "Esadecimale => decimale";
-            welcomeMessage = "Inserire il valore da convertire: (esadecimale,numero di bit) oppure per l'eccesso (esadecimale, numero di bit,potenza 2^n di eccesso)";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (esadecimale,numero di bit)
+.Eccesso (esadecimale, numero di bit,potenza 2^n di eccesso)";
         }
 
         public override string Operate(string input)

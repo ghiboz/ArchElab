@@ -11,7 +11,8 @@ namespace ArchElab
         public BinToAll()
         {
             menuTitle = "Binario => *";
-            welcomeMessage = "Inserire il valore da convertire: (binario)";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (binario)";
         }
 
         public override string Operate(string input)

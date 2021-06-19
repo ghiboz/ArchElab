@@ -11,7 +11,9 @@ namespace ArchElab
         public DecToBin()
         {
             menuTitle = "Decimale => binario";
-            welcomeMessage = "Inserire il valore da convertire: (decimale,numero di bit) oppure per l'eccesso (decimale, numero di bit,potenza 2^n di eccesso)";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (decimale,numero di bit) 
+.Eccesso (decimale, numero di bit,potenza 2^n di eccesso)";
         }
 
         public override string Operate(string input)

@@ -11,7 +11,8 @@ namespace ArchElab
         public HexToAll()
         {
             menuTitle = "Esadecimale => *";
-            welcomeMessage = "Inserire il valore da convertire: (decimale)";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (decimale)";
         }
 
         public override string Operate(string input)

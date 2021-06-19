@@ -11,7 +11,8 @@ namespace ArchElab
         public BinToDec()
         {
             menuTitle = "Binario => decimale";
-            welcomeMessage = "Inserire il valore da convertire: (binario,eccesso) eccesso: numero decimale per l'eccesso";
+            welcomeMessage = @"
+.Inserire il valore da convertire: (binario,eccesso) eccesso: numero decimale per l'eccesso";
         }
 
         public override string Operate(string input)

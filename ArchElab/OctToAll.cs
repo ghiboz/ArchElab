@@ -11,7 +11,8 @@ namespace ArchElab
         public OctToAll()
         {
             menuTitle = "Ottale => *";
-            welcomeMessage = "Inserire il valore da convertire: (ottale)";
+            welcomeMessage = @"
+Inserire il valore da convertire: (ottale)";
         }
 
         public override string Operate(string input)
