@@ -23,7 +23,7 @@ namespace ArchElab
             op.Add(new FloatToAll() { key = 8 });
             op.Add(new OctToAll() { key = 9 });
 
-            op.Add(new Iee754() { key = 0 });
+            op.Add(new Ieee754() { key = 0 });
 
         MENU:
 

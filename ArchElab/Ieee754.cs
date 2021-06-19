@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ArchElab
 {
-    public class Iee754 : IOperation
+    public class Ieee754 : IOperation
     {
-        public Iee754()
+        public Ieee754()
         {
-            menuTitle = "binario => IEE 754";
+            menuTitle = "* => IEEE 754";
             welcomeMessage = @"
 .Inserire il valore da convertire: (binario, n bit segno, n bit esponente, n bit mantissa)
 .Inserire il valore da convertire: (0xesadecimale, n bit segno, n bit esponente, n bit mantissa)
