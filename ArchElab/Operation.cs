@@ -8,7 +8,7 @@ namespace ArchElab
 {
     public class IOperation
     {
-        public int key { get; set; }
+        public int key { get; set; } = -1;
         public bool enabled { get; set; } = false;
         public string menuTitle { get; set; }
         public string welcomeMessage { get; set; }
@@ -19,6 +19,10 @@ namespace ArchElab
         /// <returns></returns>
         public virtual string Menu()
         {
+            if (key == -1)
+            {
+                return "-----------------------------------------";
+            }
             return $"{key}: {menuTitle}";
         }
 

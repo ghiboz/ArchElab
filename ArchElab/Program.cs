@@ -16,13 +16,13 @@ namespace ArchElab
             op.Add(new BinToDec() { key = 2 });
             op.Add(new HexToBin() { key = 3 });
             op.Add(new HexToDec() { key = 4 });
-
+            op.Add(new IOperation());
             op.Add(new BinToAll() { key = 5 });
             op.Add(new DecToAll() { key = 6 });
             op.Add(new HexToAll() { key = 7 });
             op.Add(new FloatToAll() { key = 8 });
             op.Add(new OctToAll() { key = 9 });
-
+            op.Add(new IOperation());
             op.Add(new Ieee754() { key = 0 });
 
         MENU:
