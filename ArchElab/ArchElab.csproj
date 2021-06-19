@@ -44,10 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinToDec.cs" />
+    <Compile Include="BinToAll.cs" />
+    <Compile Include="DecToAll.cs" />
     <Compile Include="DecToBin.cs" />
+    <Compile Include="FloatToAll.cs" />
+    <Compile Include="HexToAll.cs" />
     <Compile Include="HexToBin.cs" />
     <Compile Include="HexToDec.cs" />
     <Compile Include="Iee754.cs" />
+    <Compile Include="OctToAll.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
